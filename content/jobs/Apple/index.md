@@ -1,13 +1,15 @@
 ---
-date: '2017-12-21'
-title: 'UI Engineer Co-op'
+date: '2022-06-01'
+title: 'Technical Specialist, Genius Bar'
 company: 'Apple'
-location: 'Cupertino, CA'
-range: 'July - December 2017'
-url: 'https://www.apple.com/music/'
+location: 'Farmington, CT'
+range: 'June 2022 - June 2023'
+url: 'https://www.apple.com/'
 ---
 
-- Developed and styled interactive web applications for Apple Music using Ember and SCSS
-- Built and shipped the Apple Music Extension for Facebook Messenger leveraging third-party and internal API integrations
-- Architected and implemented the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback
-- Contributed extensively to the creation of MusicKit JS, a public-facing JavaScript SDK for embedding Apple Music players into web applications
+- Became an expert on iOS, macOS, iPadOS & watchOS
+- Cultivated and maintained up-to-date industry knowledge to best serve customers with technical solutions.
+- Provided outstanding technical support and customer service while multitasking multiple appointments and walk-ins.
+- Worked both individually and with a team to collaborate on solving complex issues.
+- Retained product, service and company policy knowledge to serve as resource for both coworkers and customers.
+- Generated over **$100,000** in sales in a single quarter.

@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Swift & SwiftUI', 'Flutter & Dart', 'AWS/S3/Amplify', 'Backend Web APIs', 'PostgreSQL', 'Git'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +135,19 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Shane and I'm passionate about developing mobile apps. I recently graduated from CCSU with a <a>Bachelor's Degree</a> in <a>Computer Science, Honors</a>. My
+              journey in app development started way back in 2015, when I was only 14 years old — from primarily
+              self taught knowledge of Java, I started teaching myself Swift to make native iOS apps.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Fast-forward to today, and I've published <a>5 apps</a> to the iOS App Store. One of which, <a href="https://apps.apple.com/us/app/lucidity-lucid-dreaming/id1121048340">Lucidity - Lucid Dreaming</a>
+              , has accumulated <a>200k+ downloads</a>.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I'm constantly hungry to learn new technologies and expand my skillset. 
+              I recently purchased an Apple Vision Pro so I can start developing for <a href="https://developer.apple.com/documentation/visionos">visionOS</a>, Apple's new spatial computing operating system.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

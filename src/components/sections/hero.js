@@ -59,29 +59,25 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hello, my name is</h1>;
+  const two = <h2 className="big-heading">Shane Curtis.</h2>;
+  const three = <h3 className="big-heading">I build mobile apps.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        I’m an up and coming Software Engineer specializing in mobile app development. Currently, I’m focused on building a new <a>AI-powered</a> meal suggestion app to encourage less food waste.
       </p>
+      
+      <p>Based in Boston, MA 🇺🇸</p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://www.github.com/shanekcurtis/"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Check out my GitHub!
     </a>
   );
 
