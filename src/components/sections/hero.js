@@ -68,7 +68,7 @@ const Hero = () => {
         I’m an up and coming Software Engineer specializing in mobile app development. Currently, I’m focused on building a new <a>AI-powered</a> meal suggestion app to encourage less food waste.
       </p>
       
-      <p>Based in Boston, MA 🇺🇸</p>
+      <p>Based in Boston, MA</p>
     </>
   );
   const five = (
