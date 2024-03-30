@@ -18,7 +18,7 @@ const IconLoader = () => (
       />
     </g>
     <text
-      x="52"
+      x="51"
       y="60"
       fill="currentColor"
       textAnchor="middle"

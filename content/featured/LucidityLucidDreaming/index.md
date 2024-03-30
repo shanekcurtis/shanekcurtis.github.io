@@ -10,6 +10,10 @@ tech:
   - Firebase
   - Firestore
   - Xcode
+  - UIKit
+  - Cocoapods
+  - Obj-C
+  - Storyboards
 ---
 
 My most successful app to date, with over **200k+ downloads**. Available on the iOS App Store. This app teaches you how to **Lucid Dream**, a brain phenomena that allows you to consciously take control of your dreams. 

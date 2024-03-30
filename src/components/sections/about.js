@@ -135,7 +135,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Shane and I'm passionate about developing mobile apps. I recently graduated from CCSU with a <a>Bachelor's Degree</a> in <a>Computer Science, Honors</a>. My
+              Hello! My name is Shane. I recently graduated from CCSU with a <a>Bachelor's Degree</a> in <a>Computer Science, Honors</a>. I'm passionate about developing mobile apps. My
               journey in app development started way back in 2015, when I was only 14 years old — from primarily
               self taught knowledge of Java, I started teaching myself Swift to make native iOS apps.
             </p>
