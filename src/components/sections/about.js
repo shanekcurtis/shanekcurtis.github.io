@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Swift & SwiftUI', 'Flutter & Dart', 'AWS/S3/Amplify', 'Backend Web APIs', 'PostgreSQL', 'Git'];
+  const skills = ['Flutter & Dart', 'Swift & SwiftUI', 'AWS/S3/Amplify', 'Backend Web APIs', 'Firebase', 'Git'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,19 +135,13 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Shane. I recently graduated from CCSU with a <a>Bachelor's Degree</a> in <a>Computer Science, Honors</a>. I'm passionate about developing mobile apps. My
-              journey in app development started way back in 2015, when I was only 14 years old — from primarily
+              Hello! My name is Shane. I'm a Software Engineer with a passion for mobile app development. Prior to graduating from CCSU with a <a>Bachelor's Degree</a> in <a>Computer Science Honors</a>, my
+              journey in app development started way back in 2015. When I was only 14 years old, from primarily
               self taught knowledge of Java, I started teaching myself Swift to make native iOS apps.
             </p>
 
             <p>
-              Fast-forward to today, and I've published <a>5 apps</a> to the iOS App Store. One of which, <a href="https://apps.apple.com/us/app/lucidity-lucid-dreaming/id1121048340">Lucidity - Lucid Dreaming</a>
-              , has accumulated <a>200k+ downloads</a>.
-            </p>
-
-            <p>
-              I'm constantly hungry to learn new technologies and expand my skillset. 
-              I recently purchased an Apple Vision Pro so I can start developing for <a href="https://developer.apple.com/documentation/visionos">visionOS</a>, Apple's new spatial computing operating system.
+              Fast-forward to today, and I've published <a>5 apps</a> to the iOS App Store, accumulating over <a>215k+ downloads</a>.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
