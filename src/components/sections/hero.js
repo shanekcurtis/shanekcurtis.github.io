@@ -65,7 +65,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m an up and coming Software Engineer specializing in mobile app development. Currently, I’m focused on building a new <a>AI-powered</a> meal suggestion app to encourage less food waste.
+      I'm a Software Engineer building scalable, high-performance apps with unique requirements. I’m passionate about intuitive user experiences, ensuring reliability and usability in real-world environments.
       </p>
       
       <p>Based in Boston, MA</p>
