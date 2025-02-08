@@ -187,7 +187,16 @@ const Jobs = () => {
     }
   `);
 
-  const jobsData = data.jobs.edges;
+  const jobsData = data.jobs.edges.reduce((acc, { node }) => {
+    const { company } = node.frontmatter;
+    if (!acc[company]) {
+      acc[company] = [];
+    }
+    acc[company].push(node);
+    return acc;
+  }, {});
+
+  const companies = Object.keys(jobsData);
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -248,42 +257,38 @@ const Jobs = () => {
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
-              return (
-                <StyledTabButton
-                  key={i}
-                  isActive={activeTabId === i}
-                  onClick={() => setActiveTabId(i)}
-                  ref={el => (tabs.current[i] = el)}
-                  id={`tab-${i}`}
-                  role="tab"
-                  tabIndex={activeTabId === i ? '0' : '-1'}
-                  aria-selected={activeTabId === i ? true : false}
-                  aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
-                </StyledTabButton>
-              );
-            })}
+          {companies.map((company, i) => (
+            <StyledTabButton
+              key={i}
+              isActive={activeTabId === i}
+              onClick={() => setActiveTabId(i)}
+              ref={el => (tabs.current[i] = el)}
+              id={`tab-${i}`}
+              role="tab"
+              tabIndex={activeTabId === i ? '0' : '-1'}
+              aria-selected={activeTabId === i ? true : false}
+              aria-controls={`panel-${i}`}>
+              <span>{company}</span>
+            </StyledTabButton>
+          ))}
           <StyledHighlight activeTabId={activeTabId} />
         </StyledTabList>
 
         <StyledTabPanels>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
-
-              return (
-                <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
-                  <StyledTabPanel
-                    id={`panel-${i}`}
-                    role="tabpanel"
-                    tabIndex={activeTabId === i ? '0' : '-1'}
-                    aria-labelledby={`tab-${i}`}
-                    aria-hidden={activeTabId !== i}
-                    hidden={activeTabId !== i}>
+        {companies.map((company, i) => (
+          <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
+            <StyledTabPanel
+              id={`panel-${i}`}
+              role="tabpanel"
+              tabIndex={activeTabId === i ? '0' : '-1'}
+              aria-labelledby={`tab-${i}`}
+              aria-hidden={activeTabId !== i}
+              hidden={activeTabId !== i}>
+              
+              {jobsData[company].map((job, j) => {
+                const { title, url, range } = job.frontmatter;
+                return (
+                  <div key={j} style={{ marginBottom: "1.5rem" }}>
                     <h3>
                       <span>{title}</span>
                       <span className="company">
@@ -293,14 +298,15 @@ const Jobs = () => {
                         </a>
                       </span>
                     </h3>
-
                     <p className="range">{range}</p>
-
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
-                  </StyledTabPanel>
-                </CSSTransition>
-              );
-            })}
+                    <div dangerouslySetInnerHTML={{ __html: job.html }} />
+                  </div>
+                );
+              })}
+              
+            </StyledTabPanel>
+          </CSSTransition>
+        ))}
         </StyledTabPanels>
       </div>
     </StyledJobsSection>
